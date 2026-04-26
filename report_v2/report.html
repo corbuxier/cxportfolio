@@ -1,0 +1,161 @@
+﻿
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>V2 B站 AIGC 趋势与创作者 AI 工具机会深度版</title>
+  <style>    :root { --blue:#00A1D6; --pink:#FB7299; --ink:#1f2937; --muted:#687385; --line:#d8e2ec; --bg:#f6f8fb; --green:#18A058; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:NotoSC, "Microsoft YaHei", sans-serif; color:var(--ink); background:white; }
+    .page { width:1120px; min-height:720px; margin:0 auto; padding:48px 64px; page-break-after:always; }
+    .cover { background:linear-gradient(135deg,#f5fbff 0%,#fff6f9 60%,#f7fff9 100%); display:flex; flex-direction:column; justify-content:center; }
+    h1 { font-size:44px; line-height:1.16; margin:0 0 22px; letter-spacing:0; }
+    h2 { font-size:29px; margin:0 0 20px; }
+    h3 { font-size:19px; margin:16px 0 8px; }
+    p, li { font-size:16px; line-height:1.75; }
+    .subtitle { font-size:22px; color:var(--muted); max-width:860px; }
+    .tagline { color:var(--blue); font-weight:800; margin-bottom:12px; }
+    .grid { display:grid; gap:16px; }
+    .cols-4 { grid-template-columns:repeat(4,1fr); }
+    .cols-3 { grid-template-columns:repeat(3,1fr); }
+    .cols-2 { grid-template-columns:repeat(2,1fr); }
+    .metric { border:1px solid var(--line); border-radius:8px; padding:16px; background:white; }
+    .metric .num { font-size:30px; color:var(--blue); font-weight:900; }
+    .metric .label { font-size:13px; color:var(--muted); }
+    .callout { border-left:6px solid var(--pink); background:#fff7fa; padding:14px 18px; border-radius:6px; margin:14px 0; }
+    .method { background:var(--bg); border:1px solid var(--line); padding:16px 18px; border-radius:8px; }
+    img.chart { width:100%; border:1px solid var(--line); border-radius:8px; background:white; }
+    table { width:100%; border-collapse:collapse; font-size:13px; }
+    th,td { border-bottom:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+    th { background:#f3f7fb; }
+    .small { color:var(--muted); font-size:12px; }
+    .pill { display:inline-block; padding:4px 8px; border-radius:999px; background:#e8f6fc; color:#006b8f; font-size:12px; margin:3px; }
+    .product { border:2px solid var(--blue); border-radius:10px; padding:18px; background:#f8fcff; }
+    @media print { body { -webkit-print-color-adjust:exact; print-color-adjust:exact; } .page { width:100%; min-height:100vh; } }
+  </style>
+</head>
+<body>
+  <section class="page cover">
+    <div class="tagline">Portfolio Case V2 | Data Research + AI Product Strategy</div>
+    <h1>B站 AIGC 趋势与<br>创作者 AI 工具机会深度分析</h1>
+    <p class="subtitle">基于 3800 条近12个月公开 B站视频样本，识别内容供给、创作者工作流需求、UP主结构与平台级 AI 产品机会。</p>
+    <div class="grid cols-4" style="margin-top:34px">
+      <div class="metric"><div class="num">3800</div><div class="label">去重公开视频样本</div></div>
+      <div class="metric"><div class="num">2969</div><div class="label">覆盖UP主</div></div>
+      <div class="metric"><div class="num">87</div><div class="label">覆盖分区</div></div>
+      <div class="metric"><div class="num">505</div><div class="label">成功详情补充</div></div>
+    </div>
+    <p class="small" style="margin-top:22px">数据窗口：2025-04-24 至 2026-04-24；V1未被覆盖，V2另建数据、报告与看板。</p>
+  </section>
+
+  <section class="page">
+    <h2>1. 方法与口径</h2>
+    <div class="method">
+      <p><b>研究问题：</b>B站 AI 内容消费正在指向哪些创作者工作流？平台如何把“看教程/看工具”转化为“开始创作/持续投稿”？</p>
+      <p><b>关键词矩阵：</b><span class="pill">AIGC</span><span class="pill">AI绘画</span><span class="pill">AI视频</span><span class="pill">AI音乐</span><span class="pill">AI配音</span><span class="pill">AI写真</span><span class="pill">数字人</span><span class="pill">AI动画</span><span class="pill">AI短剧</span><span class="pill">AI生成</span><span class="pill">AI换脸</span><span class="pill">AI工具</span><span class="pill">大模型</span><span class="pill">ChatGPT</span><span class="pill">DeepSeek</span><span class="pill">豆包AI</span><span class="pill">Kimi</span><span class="pill">Claude</span><span class="pill">可灵AI</span><span class="pill">即梦AI</span><span class="pill">Cursor</span><span class="pill">Trae</span><span class="pill">AI剪辑</span><span class="pill">AI编程</span><span class="pill">AI办公</span><span class="pill">AI写作</span><span class="pill">AI设计</span><span class="pill">AI学习</span><span class="pill">AI做PPT</span><span class="pill">AI脚本</span><span class="pill">AI封面</span><span class="pill">AI分镜</span><span class="pill">AI口播</span><span class="pill">AI运营</span><span class="pill">AI副业</span><span class="pill">AI变现</span><span class="pill">AI接单</span><span class="pill">AI电商</span><span class="pill">AI带货</span></p>
+      <p><b>主数据源：</b>公开搜索原始字段，包含发布时间、分区、UP主、播放、点赞、收藏、评论、弹幕、标签、简介。详情接口只对分层样本补充投币/分享等字段。</p>
+      <p><b>局限：</b>评论和AI总结接口易触发 412，本报告不把评论情绪作为核心证据。</p>
+    </div>
+    <div class="callout"><p><b>核心结论：</b>AIGC 内容已经从“模型能力展示”进入“创作工作流迁移”阶段；B站的产品机会是把 AI 内容消费、工具教程和投稿链路连成闭环。</p></div>
+  </section>
+
+  <section class="page"><h2>2. 趋势：供给增长与互动强度并不完全同步</h2><img class="chart" src="../charts_v2/01_monthly_supply_interaction.png"><p>供给量展示生态热度，互动中位数更接近用户行动意愿。产品判断不能只看哪个关键词视频多，还要看收藏、投币、分享、弹幕等更重反馈。</p></section>
+  <section class="page"><h2>3. 分区：AI内容已经跨出科技圈</h2><img class="chart" src="../charts_v2/02_partition_structure.png"><p>AI内容不只出现在计算机技术/软件应用，也进入日常、设计创意、绘画、影视剪辑、音乐等创作型分区。这说明 AI 能力正在被普通创作者吸收，而不是只由技术型UP主生产。</p></section>
+  <section class="page"><h2>4. 创作者结构：头部贡献明显，但长尾供给更宽</h2><div class="grid cols-2"><img class="chart" src="../charts_v2/03_creator_concentration.png"><div><p>Top10 UP主贡献互动占比约 <b>33.6%</b>。头部内容负责建立工具心智，长尾创作者负责把工具迁移到不同分区和垂类。</p><p>产品设计上，头部适合共创模板和案例库，长尾更需要低门槛工作流和投稿辅助。</p></div></div></section>
+  <section class="page"><h2>5. 场景成熟度：优先做“成熟且高意愿”的场景</h2><img class="chart" src="../charts_v2/04_scenario_maturity.png"><p>成熟度综合考虑视频数、UP主数、互动中位数、教程占比和商业化占比。当前优先场景是 <b>素材生成</b>。</p></section>
+  <section class="page"><h2>6. 内容类型 × 使用场景：需求不是单点工具，而是链路</h2><img class="chart" src="../charts_v2/05_content_scenario_heatmap.png"><p>用户关心的不是“有哪些AI工具”，而是工具在选题、脚本、素材、剪辑、封面、运营复盘中的具体落点。</p></section>
+  <section class="page"><h2>7. 创作者工作流阶段</h2><div class="grid cols-2"><img class="chart" src="../charts_v2/06_workflow_stage.png"><div><p>最高频阶段是 <b>素材</b>。这表明 B站 AI 产品应从创作流程切入，而不是停留在工具列表。</p><p>建议将“选题灵感、脚本草稿、素材生成、投稿复盘”作为最小闭环。</p></div></div></section>
+  <section class="page"><h2>8. 工具心智：通用模型与创作工具并存</h2><img class="chart" src="../charts_v2/07_tool_mentions.png"><p>通用模型解决理解、写作、规划问题；创作工具解决图片、视频、剪辑、代码和自动化问题。B站适合做“任务到工具组合”的推荐，而不是只推荐单个工具。</p></section>
+  <section class="page"><h2>9. 主题词：用户语言更偏结果与实践</h2><img class="chart" src="../charts_v2/08_topic_terms.png"><p>高频词能帮助产品确定信息架构：用户搜索的是教程、实操、工具、生成、视频、变现，而不是抽象模型参数。</p></section>
+  <section class="page"><h2>10. 推荐网络：AI内容的相邻兴趣路径</h2><img class="chart" src="../charts_v2/09_related_edges.png"><p>相关推荐采样用于观察用户从一个AI场景可能滑向哪些相邻内容。它适合用于“下一步学习/下一步创作”的推荐策略。</p></section>
+
+  <section class="page">
+    <h2>11. Top UP主样本</h2>
+    <table><thead><tr><th>UP主</th><th>类型</th><th>视频数</th><th>总播放</th><th>总互动</th><th>主场景</th></tr></thead><tbody>
+    
+      <tr><td>DiDi_OK</td><td>综合型UP主</td><td>1</td><td>19011872</td><td>4597815</td><td>选题脚本</td></tr>
+    
+      <tr><td>漫游会议室</td><td>创作型UP主</td><td>5</td><td>20361425</td><td>2007275</td><td>素材生成</td></tr>
+    
+      <tr><td>影视飓风</td><td>技术型UP主</td><td>2</td><td>11689595</td><td>1981690</td><td>综合工具探索</td></tr>
+    
+      <tr><td>猫爷说道AIGC</td><td>创作型UP主</td><td>1</td><td>7412607</td><td>1762183</td><td>选题脚本</td></tr>
+    
+      <tr><td>Ziwwwwwuuu</td><td>创作型UP主</td><td>1</td><td>3550542</td><td>1504666</td><td>素材生成</td></tr>
+    
+      <tr><td>FayeGlide</td><td>创作型UP主</td><td>1</td><td>3818896</td><td>1417940</td><td>素材生成</td></tr>
+    
+      <tr><td>英雄哪里出来</td><td>教学型UP主</td><td>1</td><td>5747505</td><td>755884</td><td>素材生成</td></tr>
+    
+      <tr><td>AI视频教程_</td><td>教学型UP主</td><td>4</td><td>4048783</td><td>754452</td><td>素材生成</td></tr>
+    
+      <tr><td>吟游诗人AT</td><td>创作型UP主</td><td>3</td><td>4441490</td><td>750274</td><td>素材生成</td></tr>
+    
+      <tr><td>吴恩达agentskills</td><td>教学型UP主</td><td>1</td><td>478173</td><td>733529</td><td>代码开发</td></tr>
+    
+    </tbody></table>
+  </section>
+
+  <section class="page">
+    <h2>12. 高互动代表视频</h2>
+    <table><thead><tr><th>视频</th><th>UP主</th><th>分区</th><th>类型</th><th>场景</th><th>互动</th></tr></thead><tbody>
+    
+      <tr><td>【牌子】当世界过分“诚实”，我们要如何保持好奇与勇气【B站AI创作大赛-开放赛道】<br><span class="small">BV11mFLziEyP</span></td><td>DiDi_OK</td><td>影视剪辑</td><td>创作者工作流</td><td>选题脚本</td><td>4597815</td></tr>
+    
+      <tr><td>如来《Money Back My Home》MV首发激情献唱！<br><span class="small">BV1rBCsB1E42</span></td><td>猫爷说道AIGC</td><td>MV</td><td>AI音乐配音</td><td>选题脚本</td><td>1762183</td></tr>
+    
+      <tr><td>改变视频行业的AI，快来了(但有点恐怖)<br><span class="small">BV1A3cczZEf6</span></td><td>影视飓风</td><td>计算机技术</td><td>AI模型资讯/评测</td><td>综合工具探索</td><td>1509940</td></tr>
+    
+      <tr><td>家里的D老师突然产生了多余的情感<br><span class="small">BV1b1t4zyEaA</span></td><td>Ziwwwwwuuu</td><td>同人·手书</td><td>AI绘画图像</td><td>素材生成</td><td>1504666</td></tr>
+    
+      <tr><td>被这画风美到了，是谁把我的梦画出来了<br><span class="small">BV1TMkYBLEf2</span></td><td>FayeGlide</td><td>日常</td><td>AI音乐配音</td><td>素材生成</td><td>1417940</td></tr>
+    
+      <tr><td>黑熊精新歌《差一点》：原来最痛的不是失败，是以为自己配。<br><span class="small">BV1ReW1zFEtq</span></td><td>漫游会议室</td><td>影视杂谈</td><td>AI音乐配音</td><td>综合工具探索</td><td>975686</td></tr>
+    
+      <tr><td>《直接给我生成完整代码》<br><span class="small">BV1hx2LBCEaY</span></td><td>英雄哪里出来</td><td>计算机技术</td><td>教程课程</td><td>素材生成</td><td>755884</td></tr>
+    
+      <tr><td>【吴恩达】2026年公认最好的【Agentic AI】教程！大模型入门到进阶，一套全解决！Agentic AI—附带课件代码<br><span class="small">BV1H79cBuEia</span></td><td>吴恩达agentskills</td><td>计算机技术</td><td>教程课程</td><td>代码开发</td><td>733529</td></tr>
+    
+      <tr><td>【吴恩达】给所有人的AI课（中英字幕），新手小白入门必看的人工智能课，从入门到进阶，全程无废话！拿走不谢<br><span class="small">BV1pH9jBDE2x</span></td><td>吴恩达ノ</td><td>计算机技术</td><td>教程课程</td><td>视频剪辑</td><td>649054</td></tr>
+    
+      <tr><td>【LangChain全讲】从入门到实战全套教程，从底层原理出发，到项目实战全面解析【大模型|大模型应用|大模型应用开发】<br><span class="small">BV1nDMJzbEGm</span></td><td>langchain教程-</td><td>计算机技术</td><td>教程课程</td><td>封面包装</td><td>642739</td></tr>
+    
+      <tr><td>真相，根本不值一提！<br><span class="small">BV1gzabzwErE</span></td><td>吟游诗人AT</td><td>动画综合</td><td>AI视频短剧</td><td>素材生成</td><td>633517</td></tr>
+    
+      <tr><td>【全30集】即梦+豆包+剪映，2小时快速掌握AI视频制作技巧，手把手教你从0到1制作AI短片！小白适用！学完即接单，带你玩转AI视频赛道！<br><span class="small">BV11NHJzTEbE</span></td><td>AI视频教程_</td><td>野生技能协会</td><td>教程课程</td><td>素材生成</td><td>605768</td></tr>
+    
+    </tbody></table>
+  </section>
+
+  <section class="page">
+    <h2>13. 产品方案升级：创作灵感台</h2>
+    <div class="product">
+      <h3>定位</h3><p>面向UP主的 AI 创作工作台，把 B站热点内容、工具教程、模板资产和投稿复盘连成闭环。</p>
+      <h3>核心模块</h3>
+      <ul>
+        <li><b>趋势雷达：</b>按分区/体量/场景识别正在增长的AI选题。</li>
+        <li><b>工作流生成：</b>输出选题、脚本、素材清单、封面方向和剪辑步骤。</li>
+        <li><b>工具组合推荐：</b>根据任务推荐模型、插件、视频/图片工具组合。</li>
+        <li><b>投稿复盘：</b>结合播放、收藏、投币、评论代理指标给出下一条建议。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="page">
+    <h2>14. 指标与实验路径</h2>
+    <div class="grid cols-3">
+      <div class="metric"><h3>北极星</h3><p>AI辅助后的投稿完成率；AI内容消费到创作行为转化率。</p></div>
+      <div class="metric"><h3>创作者侧</h3><p>草稿生成率、建议采纳率、投稿频次、从选题到投稿耗时。</p></div>
+      <div class="metric"><h3>内容侧</h3><p>收藏率、投币率、复投率、发布后互动质量分。</p></div>
+    </div>
+    <div class="callout"><p><b>MVP：</b>先做“同分区AI选题榜 + 脚本/标题生成 + 投稿复盘”三件事，验证创作转化，再扩展到素材和剪辑工具链。</p></div>
+  </section>
+
+  <section class="page">
+    <h2>15. 附录：产物与复现</h2>
+    <p>交互看板：<code>dashboard_v2/index.html</code>；清洗数据：<code>data/processed_v2/videos.csv</code>；验证摘要：<code>data/processed_v2/validation_summary_v2.json</code>。</p>
+    <p>复现命令：<code>.\\.venv\\Scripts\\python.exe scripts/pipeline_v2.py --pages 14 --target 3800 --detail-target 1600 --related-samples 120</code></p>
+    <p class="small">本项目只使用公开数据，不读取个人历史、收藏或关注；遇到风控会跳过并记录。</p>
+  </section>
+</body>
+</html>
