@@ -1959,6 +1959,125 @@ h3 {
   overflow: hidden;
 }
 
+@media (max-width: 900px) {
+  .home-page {
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .home-page main,
+  .home-page .home-hero {
+    height: auto;
+    min-height: 100svh;
+    overflow: visible;
+  }
+
+  .home-page .home-hero {
+    display: grid;
+    align-content: center;
+    padding: 116px 20px 150px;
+  }
+
+  .home-page .danmaku-layer {
+    display: none;
+  }
+
+  .home-page .hero-copy {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .home-page .hero-copy .eyebrow {
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .home-page .hero-copy h1 {
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: clamp(38px, 12vw, 48px);
+    line-height: 1.08;
+  }
+
+  .home-page .hero-summary {
+    max-width: 320px;
+    margin-top: 16px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .home-page .hero-search {
+    width: min(336px, calc(100vw - 40px));
+    margin-top: 24px;
+  }
+
+  .home-page .hero-search span {
+    padding-left: 18px;
+    font-size: 13px;
+  }
+
+  .home-page .recruit-entry-panel {
+    left: 20px;
+    right: 20px;
+    bottom: 28px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    transform: none;
+  }
+
+  .home-page .recruit-entry {
+    min-height: 70px;
+    padding: 14px 54px 14px 18px;
+  }
+
+  .home-page .recruit-entry strong {
+    font-size: 22px;
+  }
+
+  .home-page .recruit-entry span {
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .home-page .recruit-entry b {
+    right: 18px;
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 560px) {
+  .home-page .home-hero {
+    min-height: 100svh;
+    padding: 104px 20px 178px;
+  }
+
+  .home-page .site-header {
+    min-height: 74px !important;
+    padding: 0 20px !important;
+  }
+
+  .home-page .brand {
+    max-width: calc(100vw - 112px);
+    font-size: 24px !important;
+  }
+
+  .home-page .brand > span:not(.brand-mark):not(.brand-level) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .home-page .hero-media img {
+    object-position: 58% center;
+  }
+}
+
 /* Bilibili-inspired sub pages. */
 .bili-page {
   background:
