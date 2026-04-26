@@ -1808,6 +1808,11 @@ h3 {
     padding-bottom: 58px;
   }
 
+  .soft-band {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .link-panel,
   .mini-stats,
   .fit-list div {
@@ -1817,6 +1822,15 @@ h3 {
   .site-footer {
     flex-direction: column;
     padding: 28px 20px;
+  }
+
+  .compact-search {
+    width: min(336px, calc(100vw - 40px));
+  }
+
+  .compact-search span {
+    padding-left: 18px;
+    font-size: 13px;
   }
 }
 
@@ -3225,6 +3239,8 @@ h3 {
 
   .interest-gallery figure {
     grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0;
   }
 
   .interest-gallery figure,
@@ -3949,6 +3965,7 @@ h3 {
   .research-landing h1,
   .space-hero h1 {
     font-size: 34px;
+    text-wrap: balance;
   }
 
   .subpage-hero p:not(.eyebrow),
@@ -4127,7 +4144,23 @@ h3 {
   }
 
   .fitmirror-video-frame video {
-    max-height: none;
+    aspect-ratio: 16 / 10;
+    max-height: 440px;
+  }
+
+  .fitmirror-demo-grid,
+  .travel-demo-grid,
+  .travel-storytelling-layout,
+  .fitmirror-flow,
+  .travel-layer-grid {
+    gap: 14px;
+  }
+
+  .travel-demo-grid figure,
+  .travel-storytelling-layout figure {
+    width: min(100%, 340px);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .travel-phone-stack {
