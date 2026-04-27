@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>东游记 AI 旅行 Story Teller | 陈曦</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="返回通用作品集首页">
+      <img src="assets/mine/avatar.webp" alt="">
+      <span>陈曦</span>
+    </a>
+    <nav aria-label="详情页导航">
+      <a href="index.html#projects">项目</a>
+      <a href="#prototype">原型</a>
+      <a href="#capability">能力</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="detail-hero">
+      <div>
+        <p class="eyebrow">Case 03 · RAG / Agent / Travel Product</p>
+        <h1>东游记 AI 旅行 Story Teller</h1>
+        <p class="lead">面向外国游客，用精选景点知识库、地图探索和角色化讲解，把景点从“位置和门票信息”转成可理解、可选择、可分享的文化体验。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#prototype">查看原型</a>
+          <a class="button ghost" href="https://github.com/Magic-Chen-CZC/Yoyo">GitHub</a>
+        </div>
+      </div>
+      <img src="assets/projects/dongyouji-ai-card.png" alt="东游记 AI 旅行 Story Teller 视觉图">
+    </section>
+
+    <section class="section detail-summary">
+      <article><span>01</span><strong>用户问题</strong><p>外国游客来中国旅行时，能查到景点地址，却很难快速理解文化背景、游览取舍和不同景点之间的故事关联。</p></article>
+      <article><span>02</span><strong>产品定位</strong><p>东游记不是再做完整地图 App，而是在地图、景点卡片和对话之间增加一层“文化解释器”。</p></article>
+      <article><span>03</span><strong>MVP 边界</strong><p>优先验证问卷画像、POI 推荐、路线生成、景点讲解和第三方地图跳转，不把真实导航和社区系统放进第一版。</p></article>
+    </section>
+
+    <section id="prototype" class="section media-section">
+      <div class="section-head">
+        <p class="eyebrow">Prototype</p>
+        <h2>从路线选择到景点讲解</h2>
+        <p>原型把“先问清偏好，再推荐路线，再在地图上探索，最后进入景点讲解和外部地图导航”串成完整旅行决策链路。</p>
+      </div>
+      <a class="image-frame wide-image-link" href="assets/travel/dongyouji-whiteboard-flow.png" target="_blank" rel="noopener">
+        <img src="assets/travel/dongyouji-whiteboard-flow.png" alt="东游记产品原型与交互流程白板">
+        <span>完整原型流程白板，点击可查看原图。</span>
+      </a>
+      <div class="phone-grid">
+        <figure class="image-frame">
+          <img src="assets/travel/dongyouji-routes.png" alt="东游记推荐路线列表">
+          <figcaption>基于问卷偏好生成不同主题路线，帮助用户先做选择。</figcaption>
+        </figure>
+        <figure class="image-frame">
+          <img src="assets/travel/dongyouji-route-overlay.png" alt="东游记地图路线覆盖效果">
+          <figcaption>地图页用视觉路线、地标和兴趣点承接游览中的探索。</figcaption>
+        </figure>
+        <figure class="image-frame">
+          <img src="assets/travel/dongyouji-map-sheet.png" alt="东游记外部地图跳转">
+          <figcaption>真实导航交给成熟地图，产品聚焦讲解与决策。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="capability" class="section">
+      <div class="section-head">
+        <p class="eyebrow">AI Capability</p>
+        <h2>把功能设计拆成四层能力</h2>
+      </div>
+      <div class="process-grid">
+        <article><span>01</span><strong>基础智能层</strong><p>RAG、意图识别、会话记忆、多轮对话、澄清机制、数据库查询、用户画像和内容合规。</p></article>
+        <article><span>02</span><strong>旅行任务层</strong><p>问卷收集、地图探索、POI 推荐、景点卡片、路线规划、路线变更和外部导航跳转。</p></article>
+        <article><span>03</span><strong>内容表达层</strong><p>自由问答、风格化回复、多语种回复、文化类比表达和内容一致性检查。</p></article>
+        <article><span>04</span><strong>传播留存层</strong><p>旅行报告生成、一键分享、海报生成和旅行历史存储，把一次导览沉淀成体验资产。</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>东游记项目</strong><p>用旅行导览原型证明用户画像、RAG、Agent 分工、地图边界和跨文化表达理解。</p></div>
+    <a href="index.html#projects">返回项目列表</a>
+  </footer>
+</body>
+</html>

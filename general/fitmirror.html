@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FitMirror 智能健身助手 | 陈曦</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="返回通用作品集首页">
+      <img src="assets/mine/avatar.webp" alt="">
+      <span>陈曦</span>
+    </a>
+    <nav aria-label="详情页导航">
+      <a href="index.html#projects">项目</a>
+      <a href="#demo">原型</a>
+      <a href="#flow">流程</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="detail-hero">
+      <div>
+        <p class="eyebrow">Case 02 · AI Prototype / Computer Vision</p>
+        <h1>FitMirror 智能健身助手</h1>
+        <p class="lead">面向居家健身用户，把视频上传、姿态识别、动作计数、错误诊断、训练报告和 AI 问答串成一个 MVP 闭环。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#demo">查看原型</a>
+          <a class="button ghost" href="https://github.com/Magic-Chen-CZC/FIT_MIRROR">GitHub</a>
+        </div>
+      </div>
+      <img src="assets/projects/fitmirror-ai-card.png" alt="FitMirror 智能健身助手视觉图">
+    </section>
+
+    <section class="section detail-summary">
+      <article><span>01</span><strong>用户问题</strong><p>居家健身用户最难判断的不是“今天练什么”，而是“我做得对不对”。动作不标准会影响效果，也可能带来受伤风险。</p></article>
+      <article><span>02</span><strong>产品定位</strong><p>FitMirror 不是课程平台，也不是聊天助手，而是“训练执行后的即时反馈助手”：看见动作，解释问题，沉淀报告。</p></article>
+      <article><span>03</span><strong>MVP 边界</strong><p>优先验证视频输入、姿态分析、动作计数、错误诊断、报告展示和 AI 追问，不先做课程商城和复杂社区。</p></article>
+    </section>
+
+    <section id="demo" class="section media-section">
+      <div class="section-head">
+        <p class="eyebrow">Product Demo</p>
+        <h2>移动端原型与录屏演示</h2>
+        <p>页面使用项目中的真实截图与压缩后录屏素材，重点展示选择训练、查看报告、继续通过 AI 聊天理解动作原理和改善方式。</p>
+      </div>
+      <div class="demo-grid">
+        <figure class="image-frame">
+          <img src="assets/fitmirror/fitmirror-screens.png" alt="FitMirror App 多页面界面合集">
+          <figcaption>启动、登录、首页、训练列表、训练报告、发现页和个人中心界面。</figcaption>
+        </figure>
+        <figure class="video-frame">
+          <video controls preload="metadata" poster="assets/fitmirror/fitmirror-demo-poster.png">
+            <source src="assets/fitmirror/fitmirror-demo.mp4" type="video/mp4">
+            你的浏览器不支持 video 标签。
+          </video>
+        </figure>
+      </div>
+    </section>
+
+    <section id="flow" class="section">
+      <div class="section-head">
+        <p class="eyebrow">AI Architecture</p>
+        <h2>项目流程</h2>
+      </div>
+      <div class="process-grid">
+        <article><span>1</span><strong>视频输入</strong><p>用户上传或录制训练视频，选择深蹲、俯卧撑、仰卧起坐、卷腹、开合跳等动作。</p></article>
+        <article><span>2</span><strong>姿态识别</strong><p>MediaPipe 提取人体关键点，OpenCV 逐帧处理视频并计算关节角度。</p></article>
+        <article><span>3</span><strong>规则诊断</strong><p>通过动作状态机、角度阈值和错误规则完成计数、质量判断和错误类型识别。</p></article>
+        <article><span>4</span><strong>报告沉淀</strong><p>生成训练报告，包含次数、错误诊断、质量维度、雷达图和改善建议。</p></article>
+        <article><span>5</span><strong>AI 问答</strong><p>用 LLM/RAG 承接用户追问，解释动作原理、错误原因和训练建议。</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>FitMirror 项目</strong><p>用可运行原型证明用户问题、AI 能力边界、MVP 闭环和健康类风险理解。</p></div>
+    <a href="index.html#projects">返回项目列表</a>
+  </footer>
+</body>
+</html>
